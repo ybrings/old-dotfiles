@@ -39,6 +39,8 @@ alias desk="cd ~/Desktop"
 alias cmds="micro /home/abty/notevault/SNIPS/useful_commands.md"
 alias cmdscat="bat /home/abty/notevault/SNIPS/useful_commands.md"
 
+alias xoxoxo="mi /home/abty/Videos/.p/.niceones"
+
 mkcd() { mkdir -p "$@" && cd "$@"; }
 
 # swaymsg reload (Mod Shift C)

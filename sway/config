@@ -228,4 +228,16 @@ bar {
 	bindsym $mod+Ctrl+x exec grimshot --notify save area - | swappy -f -
 	bindsym $mod+Shift+x exec grimshot --notify copy area -	 
 
+
+### Sound
+
+ 	bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+	bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+	bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+### Screen Brightness
+
+	bindsym --locked XF86MonBrightnessUp exec light -T 1.4
+	bindsym --locked XF86MonBrightnessDown exec light -T 0.72
+
 include /etc/sway/config.d/*
