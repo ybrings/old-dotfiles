@@ -11,6 +11,7 @@
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"network",
+		"custom/right-arrow-dark"
 	],
 	"modules-center": [
 		"custom/left-arrow-dark",

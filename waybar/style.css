@@ -27,7 +27,8 @@ window#waybar {
 #cpu,
 #battery,
 #disk,
-#tray {
+#tray,
+#network {
 	background: #1a1a1a;
 }
 
@@ -48,27 +49,37 @@ window#waybar {
 	padding: 0 3px;
 }
 
+#network {
+	color: #ffee84;
+}
+
+#clock {
+	color: #fe5e78;
+}
+
 #pulseaudio {
-	color: #268bd2;
+	color: #0bffe1;
 }
 #memory {
-	color: #2aa198;
+	color: #854c7f;
 }
 #cpu {
 	color: #6c71c4;
 }
 #battery {
-	color: #859900;
+	color: #ffa283;
 }
 #disk {
-	color: #b58900;
+	color: #86326f;
 }
+
 
 #clock,
 #pulseaudio,
 #memory,
 #cpu,
 #battery,
-#disk {
+#disk,
+#network {
 	padding: 0 10px;
 }
