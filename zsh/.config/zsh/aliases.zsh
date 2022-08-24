@@ -31,3 +31,5 @@ alias swayconf="micro ~/src/dotfiles/sway/config"
 
 alias xoxoxo="mi /home/abty/Videos/.p/.n"
 alias xoxoxocat="bat /home/abty/Videos/.p/.n"
+
+alias fen="nohup librewolf https://filen.io/my-account/file-manager/ &"
