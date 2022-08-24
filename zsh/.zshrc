@@ -15,6 +15,8 @@ eval "$(zoxide init zsh)"
 
 export CONFIG="$HOME/.config"
 source $CONFIG/zsh/aliases.zsh
+source $CONFIG/zsh/functions.zsh
+
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
