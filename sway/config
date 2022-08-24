@@ -39,10 +39,16 @@ output "*" bg /home/abty/Pictures/space.jpeg fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+# Idle configuration
+#
+set $lock exec /usr/local/bin/lock
+
+exec swayidle \
+    timeout 300 'exec $lock' \
+    timeout 600 'swaymsg "output * dpms off"' \
+    after-resume 'swaymsg "output * dpms on"' \
+    before-sleep 'exec $lock'
+
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -50,7 +56,7 @@ output "*" bg /home/abty/Pictures/space.jpeg fill
 
 ### Lock configuaration
 #
-	bindsym $mod+Ctrl+Shift+l exec /usr/local/bin/lock
+	bindsym $mod+Ctrl+Shift+l exec $lock
 #
 
 ### Input configuration
@@ -244,5 +250,9 @@ bar {
 
 	bindsym --locked XF86MonBrightnessUp exec light -T 1.4
 	bindsym --locked XF86MonBrightnessDown exec light -T 0.72
+
+### Autostart 
+
+	exec swaymsg "workspace 2; exec librewolf"
 
 include /etc/sway/config.d/*
