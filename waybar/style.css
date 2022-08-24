@@ -83,3 +83,7 @@ window#waybar {
 #network {
 	padding: 0 10px;
 }
+
+#pulseaudio.bluetooth {
+	color: #ffffff
+}
