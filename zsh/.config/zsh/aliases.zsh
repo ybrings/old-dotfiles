@@ -28,6 +28,9 @@ alias funcs="micro ~/src/dotfiles/zsh/.config/zsh/functions.zsh"
 
 alias zconf="micro ~/src/dotfiles/zsh/.zshrc"
 alias swayconf="micro ~/src/dotfiles/sway/config"
+alias waybarconf="micro ~/src/dotfiles/waybar/config"
+alias waybarstyle="micro ~/src/dotfiles/waybar/style.css"
+alias kitconf="micro ~/src/dotfiles/kitty/kitty.conf"
 
 alias xoxoxo="mi /home/abty/Videos/.p/.n"
 alias xoxoxocat="bat /home/abty/Videos/.p/.n"

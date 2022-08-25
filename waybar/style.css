@@ -72,6 +72,9 @@ window#waybar {
 #disk {
 	color: #86326f;
 }
+#custom-spotify {
+	color: #66cc99;
+}
 
 
 #clock,
@@ -84,6 +87,8 @@ window#waybar {
 	padding: 0 10px;
 }
 
+/* 
 #pulseaudio.bluetooth {
 	color: #ffffff
 }
+*/

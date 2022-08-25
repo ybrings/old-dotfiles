@@ -11,7 +11,8 @@
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"network",
-		"custom/right-arrow-dark"
+		"custom/right-arrow-dark",
+		"custom/spotify"
 	],
 	"modules-center": [
 		"custom/left-arrow-dark",
@@ -136,5 +137,17 @@
 	    "tooltip-format-ethernet": "{ifname} ",
 	    "tooltip-format-disconnected": "Disconnected",
 	    "max-length": 50
-	}
+	},
+		"custom/spotify": {
+			"interval": 1,
+	        "format": "{icon} {}",
+	        "return-type": "json",
+	        "max-length": 40,
+	        "format-icons": {
+	            "spotify": ""
+	        },
+	        "escape": true,
+	        "exec": "~/.config/waybar/spotify.sh 2> /dev/null",  
+            "exec-if": "pgrep spotify"
+	    }
 }
